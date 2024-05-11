@@ -20,4 +20,8 @@ def Guess_Number( start , end ) :
     else:
             print("Unable to determine the number within the allowed number of iterations.")
 
-Guess_Number(0 , 300)
+print("insert the range of numbers you want to guess: ")
+start = int( input("Enter start number : "))
+end = int (input("Enter end number : "))
+
+Guess_Number(start , end)
