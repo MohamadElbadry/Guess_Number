@@ -1,0 +1,23 @@
+def Guess_Number( start , end ) : 
+    print("Answer only with Y or N")
+    while start != end :
+        mid = (start + end) // 2
+        check = input("Is the number greater than " + str(mid) + " : ").strip().upper()
+    
+        while check not in ["Y", "N"]:
+            print("Invalid input. Please enter Y or N.")
+            check = input("Is the number greater than " + str(mid) + " : ").strip().upper()
+
+        if check == "Y":
+            start = mid + 1
+        else:
+            end = mid
+
+        #if start == end:
+            #break
+    if start == end:
+            print(start)
+    else:
+            print("Unable to determine the number within the allowed number of iterations.")
+
+Guess_Number(0 , 300)
