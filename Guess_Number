@@ -2,11 +2,11 @@ def Guess_Number( start , end ) :
     print("Answer only with Y or N")
     while start != end :
         mid = (start + end) // 2
-        check = input("Is the number greater than " + str(mid) + " : ").strip().upper()
+        check = input("Is the number greater than " + str(mid) + " : ").upper()
     
         while check not in ["Y", "N"]:
             print("Invalid input. Please enter Y or N.")
-            check = input("Is the number greater than " + str(mid) + " : ").strip().upper()
+            check = input("Is the number greater than " + str(mid) + " : ").upper()
 
         if check == "Y":
             start = mid + 1
